@@ -1,0 +1,168 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header & Navigation */
+header {
+  background: #24292e;
+  color: #fff;
+  padding: 1.5em 0;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+}
+nav li {
+  margin-right: 2em;
+}
+nav a {
+  color: #eaecef;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #0366d6;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 2em 0;
+}
+.featured-post {
+  flex: 2;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #e1e4e8;
+  padding: 1.5em;
+}
+.featured-post img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+.featured-post h2 {
+  color: #0366d6;
+  margin-top: 0;
+  font-size: 1.7em;
+}
+.read-more {
+  display: inline-block;
+  margin-top: 1em;
+  background: #0366d6;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.read-more:hover {
+  background: #0057b8;
+}
+
+.posts-list {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+article {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #e1e4e8;
+  padding: 1em;
+}
+article h3 a {
+  color: #24292e;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+article h3 a:hover {
+  color: #0366d6;
+}
+.post-meta {
+  font-size: 0.9em;
+  color: #586069;
+}
+
+/* Aside / Sidebar */
+aside {
+  flex: 1;
+  margin-left: 2em;
+}
+aside section {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #e1e4e8;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+aside h4 {
+  margin-top: 0;
+  color: #24292e;
+}
+.social a {
+  display: inline-block;
+  margin-right: 1em;
+  color: #0366d6;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.social a:hover {
+  color: #0057b8;
+}
+
+/* Footer */
+footer {
+  background: #24292e;
+  color: #eaecef;
+  padding: 2em 0 1em 0;
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    gap: 0;
+  }
+  aside {
+    margin-left: 0;
+    margin-top: 2em;
+  }
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+  main, .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
